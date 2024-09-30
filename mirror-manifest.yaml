@@ -1,0 +1,24 @@
+apiVersion: mirror.openshift.io/v1alpha2
+kind: ImageSetConfiguration
+storageConfig:
+  local:
+    path: ./metadata/platform/additional
+mirror:
+  additonalImages:
+    - name: registry.access.redhat.com/ubi8/ubi:latest
+    - name: registry.access.redhat.com/ubi8/ubi-minimal:latest
+    - name: registry.access.redhat.com/ubi9/ubi:latest
+    - name: registry.access.redhat.com/ubi9/ubi-minimal:latest
+    - name: registry.redhat.io/rhel8/postgresql-12:latest
+    - name: registry.redhat.io/rhel8/postgresql-15:latest
+    - name: registry.redhat.io/rhel8/rhel-guest-image:latest
+    - name: registry.redhat.io/rhel9/postgresql-13:latest
+    - name: registry.redhat.io/rhel9/postgresql-15:latest
+    - name: registry.redhat.io/rhel9/rhel-guest-image:latest
+    - name: registry.redhat.io/ubi9/httpd-24:latest
+    - name: registry.redhat.io/openshift4/oc-mirror-plugin-rhel9:v4.14
+    - name: registry.redhat.io/openshift4/oc-mirror-plugin-rhel8:v4.14
+    - name: registry.redhat.io/openshift4/ose-cli-artifacts-rhel9:v4.16
+    - name: registry.redhat.io/openshift4/ose-cli-artifacts-alt-rhel8:v4.11
+    - name: registry.redhat.io/openshift4/ose-cli:v4.15
+    - name: registry.redhat.io/openshift4/ose-cli-rhel9:v4.16
